@@ -8,26 +8,38 @@ header {
 
 body {
 	max-width:1000px;
-	background-color: 000040;
+	background-color: #000040;
 	color: #CFCCE3;
 	margin: auto;
 	padding: 1%;
 }
+h3 {
+	font-size: 1.5em;
+	padding: 0px;
+	margin: 0px;
+}
 
 article {
-	font-size: 1.1em;
-	padding: 10px 10%;
-	min-height: 290px;
-	width: 55%;
+	padding: 10px 5%;
+	min-height: 390px;
 	margin-left: 1%;
 	border: solid #FF8C00;
 	border-width: 1px 0px;
 }
 
+p {
+	margin: 2px;
+}
+
+ul {
+	margin: 2px;
+}
 
 img {
 	float: right;
-	height: 300px;
+	margin-right: 3%;
+	margin-left: 5%;
+	height: 400px;
 	border-style: solid;
 	border-width: 5px;
 	border-color: #FF8C00;
