@@ -8,7 +8,7 @@ header {
 
 body {
 	max-width:1000px;
-	background-color: #0d2038;
+	background-color: 000040;
 	color: #CFCCE3;
 	margin: auto;
 	padding: 1%;
@@ -20,7 +20,7 @@ article {
 	min-height: 290px;
 	width: 55%;
 	margin-left: 1%;
-	border: solid #6E79B3;
+	border: solid #FF8C00;
 	border-width: 1px 0px;
 }
 
@@ -29,8 +29,9 @@ img {
 	float: right;
 	height: 300px;
 	border-style: solid;
-	border-width: 6px;
-	border-color: #6E79B3;
+	border-width: 5px;
+	border-color: #FF8C00;
+	border-radius: 8px;
 }
 
 a {
@@ -38,6 +39,7 @@ a {
 	font-weight: bold;
 }
 
-footer {
-
+iframe {
+	width:100%;
+	border-style: none;
 }
