@@ -1,0 +1,43 @@
+html { 
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+header {
+	text-align: center;
+}
+
+body {
+	max-width:1000px;
+	background-color: #0d2038;
+	color: #CFCCE3;
+	margin: auto;
+	padding: 1%;
+}
+
+article {
+	font-size: 1.1em;
+	padding: 10px 10%;
+	min-height: 290px;
+	width: 55%;
+	margin-left: 1%;
+	border: solid #6E79B3;
+	border-width: 1px 0px;
+}
+
+
+img {
+	float: right;
+	height: 300px;
+	border-style: solid;
+	border-width: 6px;
+	border-color: #6E79B3;
+}
+
+a {
+	color: #DE8E76;
+	font-weight: bold;
+}
+
+footer {
+
+}
