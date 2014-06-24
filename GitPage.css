@@ -67,7 +67,7 @@ a {
 	font-weight: bold;
 }
 
-iframe {
+footer iframe {
 	min-width: 450px;
 	max-height: 1.5em;
 	border-style: none;
@@ -86,5 +86,7 @@ div#overlay {
 	height: 100%;
 	text-align: center;
 	z-index: 1000;
-	background-color:rgba(0,0,0,0.6);
+	background-color:rgba(0,0,0,0.7);
 }
+
+object {height: 100%;}
