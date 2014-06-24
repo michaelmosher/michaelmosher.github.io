@@ -5,7 +5,8 @@
 		<meta name="author" content="Michael Mosher">
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="GitPage.css">
-		<link href='/favicon.ico' rel='icon'>
+		<link href='favicon.ico' rel='icon'>
+		<script src='overlay.js' type='text/javascript'></script>
 	</head>
 	<body>
 		<header>
@@ -51,22 +52,12 @@
 		</article>
 
 		<footer>
-			<span>Still want to know more? Check out <a href='#' onclick='overlay()'>my resum&#233;</a>.&nbsp;</span>
+			<span>Still want to know more? Check out <a href='#' onclick='openOverlay()'>my resum&#233;</a>.&nbsp;</span>
 			<iframe src='footer.html'></iframe>
 		</footer>
-		<div id='overlay'>
+		<div id='overlay' onclick='closeOverlay()'>
 			<embed id='resume' type='application/pdf' width='500' height='500' src='mosherResume.pdf'></embed>
-			<p>Click here to [<a href='#' onclick='overlay()'>close</a>]</p>
+			<p>Click here to [<a href='#' onclick='closeOverlay()'>close</a>]</p>
 		</div>
-
-		<script type='text/javascript'>
-			function overlay() {
-				el = document.getElementById('overlay');
-				el.style.visibility = (el.style.visibility == 'visible') ? 'hidden' : 'visible';
-				document.getElementById('resume').width = 0.8 * window.innerWidth;
-				document.getElementById('resume').height = 0.9 * window.innerHeight;
-
-			}
-		</script>
 	</body>
 </html>
