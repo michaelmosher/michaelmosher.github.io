@@ -69,21 +69,15 @@ a {
 	font-weight: bold;
 }
 
-iframe#resume { width:100%;}
-
-iframe#footer {
+iframe {
 	width: 55%;
 	max-height: 1.5em;
 	border-style: none;
 }
 
-footer {
-	margin: auto;
-}
-
 footer span {
 	float: left;
-	margin-left: 5%;
+	margin-left: 6%;
 }
 
 #overlay {
@@ -97,10 +91,4 @@ footer span {
 	text-align: center;
 	z-index: 1000;
 	background-color:rgba(0,0,0,0.6);
-}
-
-#overlay iframe {
-	height: 90%;
-	width: 80%;
-	margin: auto;
 }
