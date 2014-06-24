@@ -17,7 +17,7 @@
 		<img src='profile.jpg' alt='profile picture'>
 
 		<article>
-			<h3>Well Met!</h3>
+			<h3><span>&ldquo;</span>Well Met!<span>&rdquo;</span></h3>
 			<p>Welcome to my github page. Hopefully you're here to learn more about who I am. Where to begin?</p><br>
 			<p>Things I enjoy: </p>
 			<dl>
@@ -53,11 +53,12 @@
 		</article>
 
 		<footer>
-			<span>Still want to know more? Check out <a href='#' onclick='openOverlay()'>my resum&#233;</a>.&nbsp;</span>
+			<p>Still want to know more? Check out <a href='#' onclick='openOverlay()'>my resum&#233;</a>.&nbsp;</p>
 			<iframe src='footer.html'></iframe>
 		</footer>
 		<div id='overlay' onclick='closeOverlay()'>
-			<object id='resume' type='application/pdf' width='100' height='100' data='mosherResume.pdf'><span><iframe id='googleResume' src="http://docs.google.com/viewer?url=michaelmosher.github.io%2FmosherResume.pdf&embedded=true" width="100" height="100" style="border: none;"></iframe></span></object>
+			<object id='resume' type='application/pdf' width='100' height='100' data='mosherResume.pdf'><iframe id='googleResume' src="http://docs.google.com/viewer?url=michaelmosher.github.io%2FmosherResume.pdf&embedded=true" width="100" height="100" style="border: none;"></iframe></object>
+			<p>Click here to [<a href='#' onClick='closeOverlay()'>close</a>].</p>
 		</div>
 	</body>
 </html>

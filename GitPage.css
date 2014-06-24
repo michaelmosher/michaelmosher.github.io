@@ -6,6 +6,7 @@ html { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;}
 }
 
 body {
+	height: 100%;
 	max-width:1000px;
 	background-color: #000040;
 	color: #DDDDDD;
@@ -15,13 +16,18 @@ body {
 
 header { text-align: center;}
 
-body.iframe { padding: 0;}
+body.iframe {
+	padding: 0;
+	text-align: center;
+}
 
 h3 {
 	font-size: 1.5em;
 	padding: 0px;
 	margin: 0px;
 }
+
+h3 span {color: #FF8C00;}
 
 article {
 	padding: 10px 5%;
@@ -62,14 +68,9 @@ a {
 	font-weight: bold;
 }
 
-footer iframe {
-	max-height: 3em;
-	border-style: none;
-}
+footer iframe {	border-style: none;}
 
-footer { margin-left: 6%;}
-
-footer span { float: left;}
+footer { text-align: center;}
 
 div#overlay {
 	visibility: hidden;
