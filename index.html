@@ -6,6 +6,12 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="GitPage.css">
 		<link href='/favicon.ico' rel='icon'>
+		<script>
+			function overlay() {
+				el = document.getElementById('overlay');
+				el.style.visibility = (el.style.visibility == 'visible') ? 'hidden' : 'visible';
+			}
+		</script>
 	</head>
 	<header>
 		<h1>Michael Mosher</h1>
@@ -48,5 +54,11 @@
 			</ul>
 		</article>
 	</body>
-	<iframe src="footer.html"></iframe>
+	<footer>
+		<span>Still want to know more? Check out <a href='#' onclick='overlay()'>my resum&#233;</a>.&nbsp;</span>
+		<iframe id='footer' src='footer.html'></iframe></footer>
+	<div id='overlay'>
+		<iframe id='resume' src='mosherResume.pdf' ></iframe>
+		<p>Click here to [<a href='#' onclick='overlay()'>close</a>]</p>
+	</div>
 </html>
