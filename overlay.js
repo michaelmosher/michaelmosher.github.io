@@ -12,15 +12,3 @@ function openOverlay() {
 function closeOverlay() {
 	document.getElementById('overlay').style.visibility = 'hidden';
 }
-
-
-
-window.onkeydown = keydown;
-
-function keydown(e) {
-if(!e) e = event;
-
-if (e.keyCode == 27) { /* Escape */
-closeOverlay();
-}
-}
