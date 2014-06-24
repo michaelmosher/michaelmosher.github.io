@@ -1,5 +1,10 @@
 html { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;}
 
+@viewport {
+	zoom: 1.0;
+	width: extend-to-zoom;
+}
+
 body {
 	max-width:1000px;
 	background-color: #000040;
