@@ -53,7 +53,7 @@ dt {
 
 dd, li { color: #888888;}
 
-img {
+img#profile {
 	float: right;
 	margin-top: 3%;
 	margin-right: 3%;
@@ -68,12 +68,19 @@ a {
 	font-weight: bold;
 }
 
+footer { text-align: center;}
+
 footer iframe {
 	border-style: none;
 	max-height: 3em;
 }
 
-footer { text-align: center;}
+footer img {
+	height: 15px;
+	float: right;
+	margin-right: 3%;
+	margin-top: 2px;
+}
 
 div#overlay {
 	visibility: hidden;
