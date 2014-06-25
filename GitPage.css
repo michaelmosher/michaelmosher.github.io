@@ -1,4 +1,7 @@
-html { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;}
+html { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	padding: 1%;
+}
+html * { margin:0;}
 
 @viewport {
 	zoom: 1.0;
@@ -7,37 +10,32 @@ html { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;}
 
 body {
 	height: 100%;
-	max-width:1000px;
+	color: #CFCCE3;
 	background-color: #000040;
-	color: #DDDDDD;
 	margin: auto;
-	padding: 1%;
+	max-width: 900px;
 }
 
 header { text-align: center;}
-
-body.iframe {
-	padding: 0;
-	text-align: center;
-}
-
-h3 {
-	font-size: 1.5em;
-	padding: 0px;
-	margin: 0px;
-}
-
-h3 span {color: #FF8C00;}
+body.iframe { text-align: center;}
+h2 {color: #CFCCE3;}
+h2 span {color: #FF8C00;}
 
 article {
-	padding: 10px 5%;
-	min-height: 390px;
-	margin-left: 1%;
+	color: #888888;
+	padding: 10px 30px;
 	border: solid #FF8C00;
 	border-width: 1px 0px;
 }
 
-p { margin: 2px;}
+.boxy {
+	background-color: #000050;
+	border: solid #000030 4px;
+	padding: 5px;
+	margin: 0 auto 10px;
+}
+
+p { color:#CFCCE3;}
 
 ul, dl {
 	border-top: solid #CFCCE3 1px;
@@ -51,22 +49,22 @@ dt {
 	clear: left;
 }
 
-dd, li { color: #888888;}
+dd { margin-left: 40px;}
 
 img#profile {
 	float: right;
-	margin-top: 3%;
-	margin-right: 3%;
-	margin-left: 5%;
-	height: 400px;
+	width: 200px;
 	border: solid #FF8C00 5px;
 	border-radius: 8px;
+	margin-top: 10px
 }
 
 a {
 	color: #008B8B;
 	font-weight: bold;
 }
+
+a#directResumeLink { display:none;}
 
 footer { text-align: center;}
 
@@ -78,7 +76,6 @@ footer iframe {
 footer img {
 	height: 15px;
 	float: right;
-	margin-right: 3%;
 	margin-top: 2px;
 }
 
@@ -93,3 +90,5 @@ div#overlay {
 	z-index: 1000;
 	background-color:rgba(0,0,0,0.7);
 }
+
+div#picDiv { margin: 0 auto;}
