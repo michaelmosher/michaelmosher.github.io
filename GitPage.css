@@ -68,7 +68,10 @@ a {
 	font-weight: bold;
 }
 
-footer iframe {	border-style: none;}
+footer iframe {
+	border-style: none;
+	max-height: 3em;
+}
 
 footer { text-align: center;}
 
