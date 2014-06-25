@@ -1,12 +1,8 @@
 html { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	padding: 1%;
 }
-html * { margin:0;}
 
-@viewport {
-	zoom: 1.0;
-	width: extend-to-zoom;
-}
+html * { margin:0;}
 
 body {
 	height: 100%;
