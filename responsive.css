@@ -2,6 +2,7 @@
 	#picDiv { width: 822px;}
 	img#profile {width: 200px;}
 	article p { width: 580px;}
+
 	.boxy#boxy1, .boxy#boxy2 {
 		width: 558px;
 		margin: 0 0 10px;
@@ -12,7 +13,7 @@
 	#picDiv { width: 692.64px;}
 	img#profile { width: 188.16px;}
 	article p {width: 474.48px;}
-	.boxy { width: 679px;}
+	.boxy { width: 674px;}
 	.boxy#boxy1, .boxy#boxy2 {
 		width: 440px;
 		margin: 0 0 10px;
@@ -34,7 +35,7 @@
 	#picDiv { width: 392.4px;}
 	h2 {text-align: center;}
 	img#profile { display: none;}
-	.boxy { width: 392.4px;}
+	.boxy { width: 374.4px;}
 	a#overlayLink {display:none;}
 	a#directResumeLink {display:inline;}
 }
