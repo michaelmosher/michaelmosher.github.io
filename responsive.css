@@ -2,7 +2,7 @@
 	#picDiv { width: 822px;}
 	img#profile {width: 200px;}
 	article p { width: 580px;}
-
+	.boxy {width: 804px;}
 	.boxy#boxy1, .boxy#boxy2 {
 		width: 558px;
 		margin: 0 0 10px;
@@ -42,5 +42,5 @@
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
 	#picDiv { width: 260px;}
-	.boxy { width: 235.6px;}
+	.boxy { width: 242px;}
 }
