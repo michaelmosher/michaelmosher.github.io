@@ -70,8 +70,8 @@ footer iframe {
 }
 
 footer img {
+	display: block;
 	height: 15px;
-	float: right;
 	margin-top: 2px;
 }
 
@@ -88,3 +88,4 @@ div#overlay {
 }
 
 div#picDiv { margin: 0 auto;}
+div#badgeDiv {float: right;}
