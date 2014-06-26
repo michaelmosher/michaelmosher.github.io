@@ -1,4 +1,5 @@
-html { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+html {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	padding: 1%;
 }
 
@@ -10,6 +11,14 @@ body {
 	background-color: #000040;
 	margin: auto;
 	max-width: 900px;
+	font-size: 16px;
+	line-height: 140%;
+}
+
+body.noscroll {
+	position: fixed;
+	overflow-y: scroll;
+	width: 100%;
 }
 
 header { text-align: center;}
