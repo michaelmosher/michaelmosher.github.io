@@ -1,7 +1,6 @@
 function resizePopup() {
-	res1 = document.getElementById('resume');
-	res1.width = 0.8 * window.innerWidth;
-	res1.height = 0.9 * window.innerHeight;
+	document.getElementById('resume').width = 0.8 * window.innerWidth;
+	document.getElementById('resume').height = 0.9 * window.innerHeight;
 }
 
 function openOverlay() {

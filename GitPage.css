@@ -16,9 +16,7 @@ body {
 }
 
 body.noscroll {
-	position: fixed;
-	overflow-y: scroll;
-	width: 100%;
+	overflow: hidden;
 }
 
 header { text-align: center;}
