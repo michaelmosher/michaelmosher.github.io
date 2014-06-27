@@ -6,17 +6,12 @@ html {
 html * { margin:0;}
 
 body {
-	height: 100%;
 	color: #CFCCE3;
 	background-color: #000040;
 	margin: auto;
 	max-width: 900px;
 	font-size: 16px;
 	line-height: 140%;
-}
-
-body.noscroll {
-	overflow: hidden;
 }
 
 header { text-align: center;}
@@ -74,6 +69,7 @@ footer { text-align: center;}
 footer iframe {
 	border-style: none;
 	max-height: 3em;
+	overflow:hidden;
 }
 
 footer img {
@@ -83,12 +79,12 @@ footer img {
 }
 
 div#overlay {
-	visibility: hidden;
-	position: absolute;
+	display: none;
+	position: fixed;
 	left: 0;
 	top: 0;
+	bottom: 0;
 	width: 100%;
-	height: 100%;
 	text-align: center;
 	z-index: 1000;
 	background-color:rgba(0,0,0,0.7);
