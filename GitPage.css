@@ -4,6 +4,7 @@ html {
 }
 
 html * { margin:0;}
+h1 { margin-bottom: 5px; }
 
 body {
 	color: #CFCCE3;
