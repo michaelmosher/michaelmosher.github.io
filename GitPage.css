@@ -27,28 +27,11 @@ article {
 	border-width: 1px 0px;
 }
 
-.boxy {
-	background-color: #000050;
-	border: solid #000030 4px;
-	padding: 5px;
-	margin: 0 auto 10px;
+section {
+	width: '804px';
 }
 
 p { color:#CFCCE3;}
-
-ul, dl {
-	border-top: solid #CFCCE3 1px;
-	margin-top: 3px;
-}
-
-dt {
-	color: #FF8C00;
-	font-weight: bold;
-	float: left;
-	clear: left;
-}
-
-dd { margin-left: 40px;}
 
 img#profile {
 	float: right;
