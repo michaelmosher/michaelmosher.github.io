@@ -2,19 +2,24 @@ import React from 'react'
 import { Point } from './Point'
 
 const topicStyle = {
-    width: '804px',
+    // width: '804px',
     backgroundColor: '#000050',
     border: 'solid #000030 4px',
     padding: '5px',
     margin: '0 0 10px'
 }
 
+const listStyle = {
+    borderTop: 'solid #CFCCE3 1px',
+    margingTop: '3px'
+}
+
 export class Topic extends React.Component {
     pointList() {
         if (this.props.listType !== 'unordered') {
-            return <dl>{ this.props.children }</dl>
+            return <dl style={listStyle} >{ this.props.children }</dl>
         } else {
-            return <ul>{ this.props.children }</ul>
+            return <ul style={listStyle} >{ this.props.children }</ul>
         }
     }
 

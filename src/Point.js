@@ -2,11 +2,18 @@ import React from 'react';
 
 export class Point extends React.Component {
     render() {
+        const dtStyle = {
+            color: '#FF8C00',
+            fontWeight: 'bold',
+            float: 'left',
+            clear: 'left'
+        }
+
         if (this.props.title) {
             return (
                 <div className='Point'>
-                    <dt>{this.props.title}</dt>
-                    <dd>—{this.props.description}</dd>
+                    <dt style={dtStyle} >{this.props.title}</dt>
+                    <dd style={{marginLeft: '40px'}} >—{this.props.description}</dd>
                 </div>
             )
         } else {

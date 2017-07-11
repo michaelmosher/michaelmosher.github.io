@@ -9790,18 +9790,25 @@ var Point = exports.Point = function (_React$Component) {
     _createClass(Point, [{
         key: 'render',
         value: function render() {
+            var dtStyle = {
+                color: '#FF8C00',
+                fontWeight: 'bold',
+                float: 'left',
+                clear: 'left'
+            };
+
             if (this.props.title) {
                 return _react2.default.createElement(
                     'div',
                     { className: 'Point' },
                     _react2.default.createElement(
                         'dt',
-                        null,
+                        { style: dtStyle },
                         this.props.title
                     ),
                     _react2.default.createElement(
                         'dd',
-                        null,
+                        { style: { marginLeft: '40px' } },
                         '\u2014',
                         this.props.description
                     )
@@ -9879,7 +9886,7 @@ _reactDom2.default.render(_react2.default.createElement(
     ),
     _react2.default.createElement(
         'section',
-        null,
+        { style: { width: '588px' } },
         _react2.default.createElement(
             _Topic.Topic,
             { title: 'Things I enjoy' },
@@ -9890,7 +9897,7 @@ _reactDom2.default.render(_react2.default.createElement(
     ),
     _react2.default.createElement(
         'section',
-        null,
+        { style: { width: '588px' } },
         _react2.default.createElement(
             _Topic.Topic,
             { title: 'Skills I\'ve acquired doing the things I enjoy' },
@@ -22579,11 +22586,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var topicStyle = {
-    width: '804px',
+    // width: '804px',
     backgroundColor: '#000050',
     border: 'solid #000030 4px',
     padding: '5px',
     margin: '0 0 10px'
+};
+
+var listStyle = {
+    borderTop: 'solid #CFCCE3 1px',
+    margingTop: '3px'
 };
 
 var Topic = exports.Topic = function (_React$Component) {
@@ -22601,13 +22613,13 @@ var Topic = exports.Topic = function (_React$Component) {
             if (this.props.listType !== 'unordered') {
                 return _react2.default.createElement(
                     'dl',
-                    null,
+                    { style: listStyle },
                     this.props.children
                 );
             } else {
                 return _react2.default.createElement(
                     'ul',
-                    null,
+                    { style: listStyle },
                     this.props.children
                 );
             }
