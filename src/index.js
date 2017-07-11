@@ -40,6 +40,7 @@ ReactDOM.render(
             </Topic>
         </section>
     </div>,
+
     document.getElementById('react-main')
 )
 
