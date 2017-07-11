@@ -10,17 +10,11 @@ const topicStyle = {
 }
 
 export class Topic extends React.Component {
-    points() {
-        return this.props.points.map((p, i) => {
-            return <Point key={i} title={p.title} description={p.description} />
-        })
-    }
-
     pointList() {
-        if (this.props.points[0].title) {
-            return <dl>{ this.points() }</dl>
+        if (this.props.listType !== 'unordered') {
+            return <dl>{ this.props.children }</dl>
         } else {
-            return <ul>{ this.points() }</ul>
+            return <ul>{ this.props.children }</ul>
         }
     }
 
