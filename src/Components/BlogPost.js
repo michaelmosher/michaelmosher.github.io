@@ -1,5 +1,6 @@
 import React from 'react'
 import Remarkable from 'remarkable'
+import Highlight from 'react-highlight'
 
 const md = new Remarkable()
 
@@ -27,7 +28,8 @@ export class BlogPost extends React.Component {
         })
     }
     render() {
-        return <div className='blogPost' dangerouslySetInnerHTML={{__html: this.state.content}}>
-        </div>
+        return <Highlight innerHTML={true}>
+            {this.state.content}
+        </Highlight>
     }
 }
