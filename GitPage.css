@@ -31,7 +31,10 @@ section {
 	width: '804px';
 }
 
-p { color:#CFCCE3;}
+p {
+	color:#CFCCE3;
+	margin: 10px;
+}
 
 img#profile {
 	float: right;
@@ -76,3 +79,51 @@ div#overlay {
 
 div#picDiv { margin: 0 auto;}
 div#badgeDiv {float: right;}
+
+pre > code {
+	margin: 10px;
+    border: solid #000030 4px;
+    border-radius: 15px;
+}
+
+li {
+	color: #CFCCE3;
+}
+
+li > code {
+	border-bottom: orange solid 1px;
+}
+
+h4 {
+	color: orange;
+	font-size: 1.3em;
+	margin: 10px;
+}
+
+.blogPost {
+    background-color: #000050;
+    border: solid #000030 4px;
+    padding: 15px;
+    margin: 0 0 10px;
+}
+
+.blogPost > h2 {
+	border-bottom: solid white 1px;
+	margin-bottom: 10px;
+}
+
+.blogPost img {
+  float: right;
+}
+
+table {
+	background-color: #CFCCE3;
+	margin: 10px auto;
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table td, table th {
+	color: black;
+    border: 1px solid black;
+}

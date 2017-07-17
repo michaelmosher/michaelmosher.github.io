@@ -29109,9 +29109,13 @@ var BlogPost = exports.BlogPost = function (_React$Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                _reactHighlight2.default,
-                { innerHTML: true },
-                this.state.content
+                'div',
+                { className: 'blogPost' },
+                _react2.default.createElement(
+                    _reactHighlight2.default,
+                    { innerHTML: true },
+                    this.state.content
+                )
             );
         }
     }]);
