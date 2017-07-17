@@ -1,0 +1,6 @@
+For emphasis:
+
+url paths: underline
+method names: bold, different font
+notes: bold, different color
+calculations: ??
