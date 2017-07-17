@@ -28,8 +28,10 @@ export class BlogPost extends React.Component {
         })
     }
     render() {
-        return <Highlight innerHTML={true}>
-            {this.state.content}
-        </Highlight>
+        return <div className='blogPost'>
+            <Highlight innerHTML={true}>
+                {this.state.content}
+            </Highlight>
+        </div>
     }
 }
