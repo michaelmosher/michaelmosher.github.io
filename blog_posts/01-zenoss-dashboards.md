@@ -1,8 +1,8 @@
 ## Zenoss API: Creating Portable Monitoring Dashboards
 
-![dashboard](/public/images/cpu-load-ram.png)
-
 The SpinDance hosting team manages numerous applications across dozens of servers. An invaluable tool for us is our monitoring dashboards: large TVs mounted on the walls that display important server and application information for everyone to see. These help us notice unhealthy trends emerging before Zenoss alerts us of any specific issue. Here's an example of one server from one of our dashboards. We can see that CPU is running a bit hot, but load average and memory use are looking good.
+
+![dashboard](/public/images/cpu-load-ram.png)
 
 The data for these servers comes from Zenoss, but it is currently being accessed in a really ugly way: a PHP web page makes an AJAX call to a different PHP page that executes a Python script to read data from the RRD files where Zenoss stores it. Not only is this a difficult to maintain mess, but it forces the websites to be hosted on the Zenoss server, which is not very ideal. Also, no one on the team wants to maintain PHP things because PHP is gross. Yuck!
 
@@ -103,9 +103,9 @@ fetchZenossRrd(device, datapoint)
 })
 ```
 
-![dashboard #2](/public/images/dev-sg-dashboard.png)
-
 Once you've successfully retrieved the data, you can format and display it however you choose. I'll be displaying mine like this:
+
+![dashboard #2](/public/images/dev-sg-dashboard.png)
 
 #### Step 4+: Extra Credit
 
