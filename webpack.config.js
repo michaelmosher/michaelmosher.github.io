@@ -1,9 +1,10 @@
 const path = require('path');
+const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: __dirname + '/js',
+    path: __dirname + '/public/js',
     filename: 'app.bundle.js'
   },
   module: {
@@ -18,4 +19,9 @@ module.exports = {
       }
     ],
   }
+  // plugins: [
+  //   new StaticSiteGeneratorPlugin({
+  //     crawl: true
+  //   })
+  // ]
 }

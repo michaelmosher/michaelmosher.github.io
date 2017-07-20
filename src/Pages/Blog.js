@@ -6,8 +6,8 @@ import { BlogPost } from '../Components/BlogPost'
 
 const Blog = ({ match }) => (
     <div>
-        <h1>I wrote a blog!</h1>
-        <BlogList />
+        <Route exact path='/blog' render={() => (<h1>Archive</h1>)} />
+        <Route exact path='/blog' component={BlogList} />
         <Route path={match.url + '/:blogName'} component={BlogPost} />
     </div>
 )
