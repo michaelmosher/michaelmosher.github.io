@@ -10,7 +10,6 @@ body {
 	color: #CFCCE3;
 	background-color: #000040;
 	margin: auto;
-	max-width: 900px;
 	font-size: 16px;
 	line-height: 140%;
 }
@@ -25,6 +24,8 @@ article {
 	padding: 10px 30px;
 	border: solid #FF8C00;
 	border-width: 1px 0px;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 section {
@@ -36,11 +37,13 @@ p {
 }
 
 img#profile {
-	float: right;
-	width: 200px;
+	width: 90%;
 	border: solid #FF8C00 5px;
 	border-radius: 8px;
-	margin-top: 10px
+}
+
+@media screen and (max-width: 768px) {
+	img#profile { display: none;}
 }
 
 a {
@@ -85,7 +88,7 @@ pre > code {
     border-radius: 15px;
 }
 
-li {
+.blogPost li {
 	color: #CFCCE3;
 }
 

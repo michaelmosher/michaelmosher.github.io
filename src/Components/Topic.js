@@ -5,8 +5,7 @@ const topicStyle = {
     // width: '804px',
     backgroundColor: '#000050',
     border: 'solid #000030 4px',
-    padding: '5px',
-    margin: '0 0 10px'
+    padding: '5px'
 }
 
 const listStyle = {
@@ -25,7 +24,7 @@ export class Topic extends React.Component {
 
     render() {
         return (
-            <div className='Topic' style={topicStyle}>
+            <div className='fluid Topic card' style={topicStyle}>
                 <p>{this.props.title}</p>
                 {this.pointList()}
             </div>
