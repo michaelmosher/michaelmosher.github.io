@@ -1,5 +1,4 @@
 const path = require('path');
-const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -19,9 +18,4 @@ module.exports = {
       }
     ],
   }
-  // plugins: [
-  //   new StaticSiteGeneratorPlugin({
-  //     crawl: true
-  //   })
-  // ]
 }

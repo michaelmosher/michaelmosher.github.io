@@ -14301,7 +14301,7 @@ var _Footer2 = _interopRequireDefault(_Footer);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom2.default.render(_react2.default.createElement(
-    _reactRouterDom.BrowserRouter,
+    _reactRouterDom.HashRouter,
     null,
     _react2.default.createElement(
         'div',
