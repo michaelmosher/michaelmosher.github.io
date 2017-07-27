@@ -29080,6 +29080,12 @@ var _reactHighlight = __webpack_require__(291);
 
 var _reactHighlight2 = _interopRequireDefault(_reactHighlight);
 
+var _remarkable_plugins = __webpack_require__(473);
+
+var plugins = _interopRequireWildcard(_remarkable_plugins);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29089,6 +29095,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var md = new _remarkable2.default();
+
+md.use(plugins.table_plugin);
 
 var BlogPost = exports.BlogPost = function (_React$Component) {
     _inherits(BlogPost, _React$Component);
@@ -54429,6 +54437,42 @@ var Footer = function Footer() {
 	);
 };
 exports.default = Footer;
+
+/***/ }),
+/* 473 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.table_plugin = table_plugin;
+
+var dataLabels = [];
+var index = 0;
+
+function my_table_open() {
+    dataLabels = [];
+    return '<table>\n';
+}
+
+function my_th_open(tokens, idx) {
+    var th_content = tokens[idx + 1].content;
+    dataLabels.push(th_content);
+    return '<th>';
+}
+
+function my_td_open() {
+    return '<td data-label=' + dataLabels[index++ % dataLabels.length] + ' >';
+};
+
+function table_plugin(md) {
+    md.renderer.rules.table_open = my_table_open;
+    md.renderer.rules.th_open = my_th_open;
+    md.renderer.rules.td_open = my_td_open;
+}
 
 /***/ })
 /******/ ]);

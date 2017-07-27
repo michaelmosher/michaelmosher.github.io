@@ -1,8 +1,11 @@
 import React from 'react'
 import Remarkable from 'remarkable'
 import Highlight from 'react-highlight'
-
+import * as plugins from './remarkable_plugins'
 const md = new Remarkable()
+
+
+md.use(plugins.table_plugin)
 
 export class BlogPost extends React.Component {
     constructor() {

@@ -1,9 +1,7 @@
-html {
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	padding: 1%;
-}
-
+html { padding: 1%; }
 html * { margin:0;}
+html, * { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
 h1 { margin-bottom: 5px; }
 
 body {
@@ -55,18 +53,6 @@ a#directResumeLink { display:none;}
 
 footer { text-align: center;}
 
-footer iframe {
-	border-style: none;
-	max-height: 60px;
-	overflow:hidden;
-}
-
-footer img {
-	display: block;
-	height: 15px;
-	margin-top: 2px;
-}
-
 div#overlay {
 	display: none;
 	position: fixed;
@@ -78,9 +64,6 @@ div#overlay {
 	z-index: 1000;
 	background-color:rgba(0,0,0,0.7);
 }
-
-div#picDiv { margin: 0 auto;}
-div#badgeDiv {float: right;}
 
 pre > code {
 	margin: 10px;
@@ -118,14 +101,14 @@ h4 {
 	margin: 10px;
 }
 
-table {
-	background-color: #CFCCE3;
+ table {
 	margin: 10px auto;
     border-collapse: collapse;
     border-style: hidden;
 }
 
 table td, table th {
+	background-color: #CFCCE3;
 	color: black;
-    border: 2px solid #000050;
+	border: 2px solid #000050;
 }
