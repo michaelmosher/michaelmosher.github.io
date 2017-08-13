@@ -1,6 +1,10 @@
-For emphasis:
+Emphasis patterns:
 
-url paths: underline
-method names: bold, different font
-notes: bold, different color
-calculations: ??
+1. <em> - created in markdown by *one star* or _one underscore_
+  use for url paths
+
+2. <strong> - created by **two stars** or __underscores__
+  use for important notes
+
+3. <code> - created using `backticks`
+  use for method names or computations
