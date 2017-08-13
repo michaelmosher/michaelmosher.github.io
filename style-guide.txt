@@ -1,10 +1,13 @@
 Emphasis patterns:
 
 1. <em> - created in markdown by *one star* or _one underscore_
+  renders renders text with orange underline
   use for url paths
 
 2. <strong> - created by **two stars** or __underscores__
+  renders text bold and orange
   use for important notes
 
 3. <code> - created using `backticks`
+  renders text bold in a san-serif font
   use for method names or computations
