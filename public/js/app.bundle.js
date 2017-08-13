@@ -54448,7 +54448,6 @@ var Footer = function (_React$Component) {
 		_this.state = { expanded: false };
 
 		_this.toggleInfo = _this.toggleInfo.bind(_this);
-
 		return _this;
 	}
 
@@ -54462,54 +54461,7 @@ var Footer = function (_React$Component) {
 	}, {
 		key: 'render',
 		value: function render() {
-			var info = _react2.default.createElement(
-				'a',
-				{ onClick: this.toggleInfo },
-				'Want to know more?'
-			);
-
-			if (this.state.expanded) {
-				var expandedInfoStyle = {
-					maxWidth: '800px',
-					backgroundColor: '#000050',
-					border: 'solid #000030 4px',
-					margin: '0 auto',
-					padding: '5px'
-				};
-				info = _react2.default.createElement(
-					'div',
-					{ style: expandedInfoStyle },
-					_react2.default.createElement(
-						'p',
-						null,
-						'My resum\xE9 is hosted on ',
-						_react2.default.createElement(
-							'a',
-							{ href: 'https://github.com/michaelmosher/LatexResume' },
-							'GitHub'
-						),
-						' as well.'
-					),
-					_react2.default.createElement(
-						'p',
-						null,
-						'Want to talk? Email me at ',
-						_react2.default.createElement(
-							'a',
-							{ href: 'mailto:mmosher47@gmail.com', target: '_top' },
-							'mmosher47@gmail.com'
-						),
-						'.'
-					),
-					_react2.default.createElement(
-						'a',
-						{ onClick: this.toggleInfo },
-						'Want to know less?'
-					)
-				);
-			}
-
-			return _react2.default.createElement(
+			var footer = _react2.default.createElement(
 				'footer',
 				null,
 				_react2.default.createElement(
@@ -54523,8 +54475,76 @@ var Footer = function (_React$Component) {
 					),
 					'.'
 				),
-				info
+				_react2.default.createElement(
+					'a',
+					{ onClick: this.toggleInfo },
+					'Want to know more?'
+				)
 			);
+
+			if (this.state.expanded) {
+				var expandedInfoStyle = {
+					backgroundColor: '#000050',
+					border: 'solid #000030 4px',
+					margin: '0 auto',
+					padding: '5px'
+				};
+
+				footer = _react2.default.createElement(
+					'footer',
+					null,
+					_react2.default.createElement(
+						'div',
+						{ className: 'large card', style: expandedInfoStyle },
+						_react2.default.createElement(
+							'p',
+							null,
+							'This webpage is hosted on ',
+							_react2.default.createElement(
+								'a',
+								{ href: 'https://github.com/michaelmosher/michaelmosher.github.io' },
+								'GitHub'
+							),
+							'.'
+						),
+						_react2.default.createElement(
+							'p',
+							null,
+							'My ',
+							_react2.default.createElement(
+								'a',
+								{ href: 'https://github.com/michaelmosher/LatexResume/blob/master/mosherResume.pdf' },
+								'resum\xE9'
+							),
+							' is hosted on ',
+							_react2.default.createElement(
+								'a',
+								{ href: 'https://github.com/michaelmosher/LatexResume' },
+								'GitHub'
+							),
+							' as well.'
+						),
+						_react2.default.createElement(
+							'p',
+							null,
+							'Want to talk? Email me at ',
+							_react2.default.createElement(
+								'a',
+								{ href: 'mailto:mmosher47@gmail.com', target: '_top' },
+								'mmosher47@gmail.com'
+							),
+							'.'
+						),
+						_react2.default.createElement(
+							'a',
+							{ onClick: this.toggleInfo },
+							'Want to know less?'
+						)
+					)
+				);
+			}
+
+			return footer;
 		}
 	}]);
 
