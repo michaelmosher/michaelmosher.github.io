@@ -18,6 +18,11 @@
     margin: 10px;
 }
 
+.blogPost img {
+    display: block;
+    margin: 0 auto;
+}
+
 .blogPost p {
     margin: 10px;
 }
@@ -33,6 +38,11 @@
 
 .blogPost strong {
     color: orange;
+}
+
+.blogPost pre {
+    background-color: initial;
+    border: none;
 }
 
 .blogPost p>code,

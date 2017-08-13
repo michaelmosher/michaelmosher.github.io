@@ -24,6 +24,7 @@ body {
 }
 
 header {
+    background-color: initial;
     text-align: center;
 }
 
@@ -79,6 +80,7 @@ a#directResumeLink {
 }
 
 footer {
+    background-color: initial;
     text-align: center;
 }
 
