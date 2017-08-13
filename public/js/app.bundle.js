@@ -14290,11 +14290,11 @@ var _Blog = __webpack_require__(236);
 
 var _Blog2 = _interopRequireDefault(_Blog);
 
-var _Header = __webpack_require__(471);
+var _Header = __webpack_require__(472);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Footer = __webpack_require__(472);
+var _Footer = __webpack_require__(473);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -29080,7 +29080,7 @@ var _reactHighlight = __webpack_require__(291);
 
 var _reactHighlight2 = _interopRequireDefault(_reactHighlight);
 
-var _remarkable_plugins = __webpack_require__(473);
+var _remarkable_plugins = __webpack_require__(471);
 
 var plugins = _interopRequireWildcard(_remarkable_plugins);
 
@@ -54349,6 +54349,42 @@ module.exports = function(hljs) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.table_plugin = table_plugin;
+
+var dataLabels = [];
+var index = 0;
+
+function my_table_open() {
+    dataLabels = [];
+    return '<table>\n';
+}
+
+function my_th_open(tokens, idx) {
+    var th_content = tokens[idx + 1].content;
+    dataLabels.push(th_content);
+    return '<th>';
+}
+
+function my_td_open() {
+    return '<td data-label=' + dataLabels[index++ % dataLabels.length] + ' >';
+};
+
+function table_plugin(md) {
+    md.renderer.rules.table_open = my_table_open;
+    md.renderer.rules.th_open = my_th_open;
+    md.renderer.rules.td_open = my_td_open;
+}
+
+/***/ }),
+/* 472 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
 var _react = __webpack_require__(4);
 
@@ -54377,14 +54413,14 @@ var Header = function Header() {
 exports.default = Header;
 
 /***/ }),
-/* 472 */
+/* 473 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 
 var _react = __webpack_require__(4);
@@ -54395,84 +54431,40 @@ var _reactRouterDom = __webpack_require__(29);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function resizePopup() {
-	var viewportWidth = window.innerWidth;
-	var viewportHeight = window.innerHeight;
-	var pageWidth = document.body.clientWidth;
-	document.getElementById('resume').width = 0.8 * Math.min(viewportWidth, pageWidth);
-	document.getElementById('resume').height = Math.min(viewportHeight - 100, 1.1 * pageWidth);
-}
-
 function openOverlay() {
-	resizePopup();
-	document.getElementById('overlay').style.display = 'block';
+    resizePopup();
+    document.getElementById('overlay').style.display = 'block';
 }
 
 var Footer = function Footer() {
-	return _react2.default.createElement(
-		'footer',
-		null,
-		_react2.default.createElement(
-			'p',
-			null,
-			'Still want to know more? Check out ',
-			_react2.default.createElement(
-				'a',
-				{ id: 'overlayLink', href: '#', onClick: openOverlay },
-				'my resum\xE9'
-			),
-			'.'
-		),
-		_react2.default.createElement(
-			'p',
-			null,
-			'Want to talk? Email me at ',
-			_react2.default.createElement(
-				'a',
-				{ href: 'mailto:mmosher47@gmail.com', target: '_top' },
-				'mmosher47@gmail.com'
-			),
-			'.'
-		)
-	);
+    return _react2.default.createElement(
+        'footer',
+        null,
+        _react2.default.createElement(
+            'p',
+            null,
+            'Still want to know more? Check out ',
+            _react2.default.createElement(
+                'a',
+                { id: 'overlayLink', href: '#', onClick: openOverlay },
+                'my resum\xE9'
+            ),
+            '.'
+        ),
+        _react2.default.createElement(
+            'p',
+            null,
+            'Want to talk? Email me at ',
+            _react2.default.createElement(
+                'a',
+                { href: 'mailto:mmosher47@gmail.com', target: '_top' },
+                'mmosher47@gmail.com'
+            ),
+            '.'
+        )
+    );
 };
 exports.default = Footer;
-
-/***/ }),
-/* 473 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.table_plugin = table_plugin;
-
-var dataLabels = [];
-var index = 0;
-
-function my_table_open() {
-    dataLabels = [];
-    return '<table>\n';
-}
-
-function my_th_open(tokens, idx) {
-    var th_content = tokens[idx + 1].content;
-    dataLabels.push(th_content);
-    return '<th>';
-}
-
-function my_td_open() {
-    return '<td data-label=' + dataLabels[index++ % dataLabels.length] + ' >';
-};
-
-function table_plugin(md) {
-    md.renderer.rules.table_open = my_table_open;
-    md.renderer.rules.th_open = my_th_open;
-    md.renderer.rules.td_open = my_td_open;
-}
 
 /***/ })
 /******/ ]);

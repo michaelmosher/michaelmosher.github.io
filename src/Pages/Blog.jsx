@@ -1,8 +1,8 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 
-import { BlogList } from '../Components/BlogList'
-import { BlogPost } from '../Components/BlogPost'
+import { BlogList } from '../Components/BlogList.jsx'
+import { BlogPost } from '../Components/BlogPost.jsx'
 
 const Blog = ({ match }) => (
     <div>

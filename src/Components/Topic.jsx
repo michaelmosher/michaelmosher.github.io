@@ -1,5 +1,5 @@
 import React from 'react'
-import { Point } from './Point'
+import { Point } from './Point.jsx'
 
 const topicStyle = {
     // width: '804px',

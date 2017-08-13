@@ -1,6 +1,6 @@
 import React from 'react'
-import { Topic } from '../Components/Topic'
-import { Point } from '../Components/Point'
+import { Topic } from '../Components/Topic.jsx'
+import { Point } from '../Components/Point.jsx'
 
 const About = () => (
     <div>
