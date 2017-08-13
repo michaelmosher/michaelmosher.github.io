@@ -1,114 +1,95 @@
-html { padding: 1%; }
-html * { margin:0;}
-html, * { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
-
-h1 { margin-bottom: 5px; }
-
-body {
-	color: #CFCCE3;
-	background-color: #000040;
-	margin: auto;
-	font-size: 16px;
-	line-height: 140%;
+html {
+    padding: 1%;
 }
 
-header { text-align: center;}
-body.iframe { text-align: center;padding:0;}
-h2 {color: #CFCCE3;}
-h2 span {color: #FF8C00;}
+html * {
+    margin: 0;
+}
+
+html,
+* {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+body {
+    color: #CFCCE3;
+    background-color: #000040;
+    margin: auto;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+header {
+    text-align: center;
+}
+
+body.iframe {
+    text-align: center;
+    padding: 0;
+}
+
+h2 {
+    color: #CFCCE3;
+}
+
+h2 span {
+    color: #FF8C00;
+}
 
 article {
-	color: #888888;
-	padding: 10px 30px;
-	border: solid #FF8C00;
-	border-width: 1px 0px;
-	max-width: 800px;
-	margin: 0 auto;
+    color: #888888;
+    padding: 10px 30px;
+    border: solid #FF8C00;
+    border-width: 1px 0px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 section {
-	width: '804px';
+    width: '804px';
 }
 
 p {
-	color:#CFCCE3;
+    color: #CFCCE3;
 }
 
 img#profile {
-	width: 90%;
-	border: solid #FF8C00 5px;
-	border-radius: 8px;
+    width: 90%;
+    border: solid #FF8C00 5px;
+    border-radius: 8px;
 }
 
 @media screen and (max-width: 768px) {
-	img#profile { display: none;}
+    img#profile {
+        display: none;
+    }
 }
 
 a {
-	color: #008B8B;
-	font-weight: bold;
+    color: #008B8B;
+    font-weight: bold;
 }
 
-a#directResumeLink { display:none;}
+a#directResumeLink {
+    display: none;
+}
 
-footer { text-align: center;}
+footer {
+    text-align: center;
+}
 
 div#overlay {
-	display: none;
-	position: fixed;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	z-index: 1000;
-	background-color:rgba(0,0,0,0.7);
-}
-
-pre > code {
-	margin: 10px;
-    border: solid #000030 4px;
-    border-radius: 15px;
-}
-
-.blogPost li {
-	color: #CFCCE3;
-}
-
-li > code {
-	border-bottom: orange solid 1px;
-}
-
-h4 {
-	color: orange;
-	font-size: 1.3em;
-	margin: 10px;
-}
-
-.blogPost {
-    background-color: #000050;
-    border: solid #000030 4px;
-    padding: 15px;
-    margin: 0 0 10px;
-}
-
-.blogPost > h2 {
-	border-bottom: solid white 1px;
-	margin-bottom: 10px;
-}
-
-.blogPost p {
-	margin: 10px;
-}
-
- table {
-	margin: 10px auto;
-    border-collapse: collapse;
-    border-style: hidden;
-}
-
-table td, table th {
-	background-color: #CFCCE3;
-	color: black;
-	border: 2px solid #000050;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
 }
