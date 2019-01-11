@@ -1,0 +1,71 @@
+.blogPost {
+    background-color: #000050;
+    border: solid #000030 4px;
+    padding: 15px;
+    margin: 0 0 10px;
+}
+
+.blogPost h1 {
+    color: #CFCCE3;
+    border-bottom: solid white 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.blogPost h2 {
+    color: orange;
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+.blogPost img {
+    display: block;
+    margin: 0 auto;
+}
+
+.blogPost p {
+    margin: 10px;
+}
+
+.blogPost li {
+    color: #CFCCE3;
+}
+
+.blogPost em {
+    font-style: normal;
+    border-bottom: solid orange 1px;
+}
+
+.blogPost strong {
+    color: orange;
+}
+
+.blogPost pre {
+    background-color: initial;
+    border: none;
+}
+
+.blogPost p>code,
+.blogPost li>code {
+    font-weight: bold;
+    background-color: initial;
+}
+
+.blogPost pre>code {
+    margin: 10px;
+    border: solid #000030 4px;
+    border-radius: 15px;
+}
+
+.blogPost table {
+    margin: 10px auto;
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+.blogPost table td,
+.blogPost table th {
+    background-color: #CFCCE3;
+    color: black;
+    border: 2px solid #000050;
+}
