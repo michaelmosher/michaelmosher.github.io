@@ -1,3 +1,20 @@
+<script>
+	import SectionHeader from "./SectionHeader.svelte"
+	import WhiteBox from "./WhiteBox.svelte"
+</script>
+
+<style>
+	dl {
+		display: grid;
+		grid-template-columns: 25% auto;
+		grid-row-gap: 15px;
+	}
+
+	dt {
+		font-weight: bold;
+	}
+</style>
+
 <SectionHeader name="Projects" />
 <WhiteBox>
 	<dl role="document">
@@ -16,24 +33,3 @@
 		<dd>(Work in Progress) This is an Android Kotlin app that tracks frequency of recurring actions.</dd>
 	</dl>
 </WhiteBox>
-
-<script>
-  export default {
-    components: {
-      SectionHeader: "./SectionHeader.svelte",
-      WhiteBox: "./WhiteBox.svelte"
-    }
-  };
-</script>
-
-<style>
-  dl {
-    display: grid;
-    grid-template-columns: 25% auto;
-    grid-row-gap: 15px;
-  }
-
-  dt {
-    font-weight: bold;
-  }
-</style>

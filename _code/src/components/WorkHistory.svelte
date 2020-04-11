@@ -1,3 +1,39 @@
+<script>
+	import SectionHeader from "./SectionHeader.svelte"
+	import WhiteBox from "./WhiteBox.svelte"
+</script>
+
+<style>
+	section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	section + section {
+		margin-top: 20px;
+	}
+
+	.employer {
+		margin-bottom: 10px;
+	}
+
+	.employer > span:first-child {
+		font-weight: bold;
+	}
+
+	.employer,
+	.job {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.dates {
+		margin-left: auto;
+	}
+</style>
+
 <SectionHeader name="Work History" />
 <WhiteBox>
 	<section role="document">
@@ -25,43 +61,3 @@
 		</div>
 	</section>
 </WhiteBox>
-
-<script>
-  export default {
-    components: {
-      SectionHeader: "./SectionHeader.svelte",
-      WhiteBox: "./WhiteBox.svelte"
-    }
-  };
-</script>
-
-<style>
-	section {
-	  display: flex;
-	  flex-direction: column;
-	}
-
-	section + section {
-	  margin-top: 20px;
-	}
-
-	.employer {
-	  margin-bottom: 10px;
-	}
-
-	.employer > span:first-child {
-	  font-weight: bold;
-	}
-
-	.employer,
-	.job {
-	  display: flex;
-	  flex-wrap: wrap;
-	  align-items: center;
-	  justify-content: space-between;
-	}
-
-	.dates {
-	  margin-left: auto;
-	}
-</style>

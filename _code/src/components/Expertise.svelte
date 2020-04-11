@@ -1,3 +1,8 @@
+<script>
+    import SectionHeader from "./SectionHeader.svelte"
+	import WhiteBox from "./WhiteBox.svelte"
+</script>
+
 <SectionHeader name="Expertise" />
 <WhiteBox>
 	<h4>Dev Expertise</h4>
@@ -16,12 +21,3 @@
 			</ul>
 	</ul>
 </WhiteBox>
-
-<script>
-  export default {
-    components: {
-      SectionHeader: "./SectionHeader.svelte",
-      WhiteBox: "./WhiteBox.svelte"
-    }
-  };
-</script>
